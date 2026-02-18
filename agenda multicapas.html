@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Multicapa Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mi Agenda Multicapa</h1>
+
+      <form id="agenda-form">
+        <input type="hidden" id="edit-index" />
+
+        <div class="input-group">
+          <select id="categoria-select" required>
+            <option value="General">🌐 General</option>
+            <option value="Trabajo">💼 Trabajo</option>
+            <option value="Familia">🏠 Familia</option>
+          </select>
+
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre completo"
+            required
+          />
+          <input type="tel" id="telefono" placeholder="Teléfono" required />
+          <button type="submit" id="btn-submit">Guardar</button>
+        </div>
+      </form>
+
+      <div id="contenedor-agendas" class="agendas-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
